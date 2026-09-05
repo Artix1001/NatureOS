@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#18251f">
+  <meta name="description" content="NatureOS — a calm, nature-centered web operating system.">
+  <title>NatureOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&amp;family=Arizonia&amp;family=Chewy&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="desktop" id="desktop" aria-label="NatureOS desktop">
+    <div class="desktop__wallpaper" aria-hidden="true"></div>
+    <div class="desktop__atmosphere" aria-hidden="true"></div>
+
+    <div class="desktop__workspace" id="desktopWorkspace" aria-hidden="true">
+      <header class="menu-bar glass-surface">
+      <div class="menu-bar__section menu-bar__section--start">
+        <button class="system-button" id="systemMenuButton" type="button" aria-label="Open NatureOS menu" aria-expanded="false" aria-controls="systemMenu">
+          <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.4 3.2C12.1 3.5 6.2 6.7 5.1 12.1c-.4 1.9.1 3.5 1.2 4.7 2-4 5.2-6.7 9.8-8.4-3.7 2.2-6.5 5.1-8.2 8.7 1.1.5 2.4.6 3.8.2 5.1-1.4 7.5-7.3 7.7-14.1Z"/>
+            <path d="M6.9 16.4c-1.3 1.2-2.4 2.6-3.3 4.3"/>
+          </svg>
+        </button>
+        <span class="menu-bar__brand">NatureOS</span>
+        <span class="menu-bar__location" aria-hidden="true">Desktop</span>
+      </div>
+
+      <div class="menu-bar__section menu-bar__section--end">
+        <span class="status-item status-item--signal" aria-label="More coming soon">
+          <svg class="status-sprout" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M10 16.5V9.5"/>
+            <path d="M10 11.5c-3.2 0-5.1-1.8-5.5-4.9 3.1-.1 5.2 1.4 5.5 4.9Z"/>
+            <path d="M10 9.4c3.1 0 5.1-1.8 5.6-4.9-3.2-.1-5.2 1.4-5.6 4.9Z"/>
+          </svg>
+          More coming soon!
+        </span>
+        <span class="status-item" id="menuDate"></span>
+        <time class="status-item status-item--time" id="menuTime" datetime="">--:--</time>
+      </div>
+      </header>
+
+      <section class="system-menu glass-surface" id="systemMenu" aria-label="NatureOS menu" aria-hidden="true">
+      <div class="system-menu__identity">
+        <span class="system-menu__emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M19.4 3.2C12.1 3.5 6.2 6.7 5.1 12.1c-.4 1.9.1 3.5 1.2 4.7 2-4 5.2-6.7 9.8-8.4-3.7 2.2-6.5 5.1-8.2 8.7 1.1.5 2.4.6 3.8.2 5.1-1.4 7.5-7.3 7.7-14.1Z"/>
+            <path d="M6.9 16.4c-1.3 1.2-2.4 2.6-3.3 4.3"/>
+          </svg>
+        </span>
+        <div>
+          <strong>NatureOS</strong>
+          <span>Habitat preview</span>
+        </div>
+      </div>
+      <div class="system-menu__divider"></div>
+      <p>Everything needs to cooperate in nature.</p>
+      <span class="system-menu__version">Foundation · 0.1</span>
+      </section>
+
+      <section class="welcome" aria-labelledby="welcomeTitle">
+        <p class="welcome__eyebrow" id="welcomeDate">Welcome</p>
+        <h1 id="welcomeTitle">Breathe in.<br>Begin.</h1>
+        <p class="welcome__message">A quieter place for your ideas to grow.</p>
+      </section>
+
+      <footer class="desktop-shelf glass-surface" aria-label="Desktop status">
+        <span class="desktop-shelf__seed" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 20v-9"/>
+            <path d="M12 13C8.2 13 5.7 10.8 5 7c3.7-.2 6.3 1.6 7 6Z"/>
+            <path d="M12 10c3.7 0 6.2-2.2 7-6-3.8-.2-6.3 1.6-7 6Z"/>
+          </svg>
+        </span>
+        <span class="desktop-shelf__label">Your habitat is ready</span>
+        <span class="desktop-shelf__pulse" aria-hidden="true"></span>
+      </footer>
+    </div>
+
+    <section class="welcome-screen" id="welcomeScreen" aria-labelledby="introTitle">
+      <div class="leaf-field leaf-field--back" id="leafFieldBack" aria-hidden="true"></div>
+
+      <div class="welcome-stage">
+        <img class="welcome-stage__halo" src="assets/welcome-landscape.png" alt="" aria-hidden="true">
+        <img class="welcome-stage__landscape" src="assets/welcome-landscape.png" alt="A peaceful mountain lake at sunrise surrounded by trees and wildflowers">
+        <div class="welcome-stage__shade" aria-hidden="true"></div>
+
+        <div class="intro-menu" id="introMenu">
+          <span class="intro-menu__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M19.4 3.2C12.1 3.5 6.2 6.7 5.1 12.1c-.4 1.9.1 3.5 1.2 4.7 2-4 5.2-6.7 9.8-8.4-3.7 2.2-6.5 5.1-8.2 8.7 1.1.5 2.4.6 3.8.2 5.1-1.4 7.5-7.3 7.7-14.1Z"/>
+              <path d="M6.9 16.4c-1.3 1.2-2.4 2.6-3.3 4.3"/>
+            </svg>
+          </span>
+          <p class="intro-menu__eyebrow">Welcome to</p>
+          <h1 id="introTitle">NatureOS</h1>
+          <p class="intro-menu__tagline">A quieter space to think, create, and grow.</p>
+          <div class="intro-menu__actions" aria-label="Welcome menu">
+            <button class="intro-action intro-action--primary" id="startButton" type="button">
+              <span>Start</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4"/>
+              </svg>
+            </button>
+            <button class="intro-action" id="aboutButton" type="button"><span>About</span></button>
+          </div>
+        </div>
+
+        <section class="about-card" id="aboutCard" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutDescription" aria-hidden="true">
+          <button class="about-card__close" id="closeAboutButton" type="button" aria-label="Close About">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="m6 6 8 8m0-8-8 8"/>
+            </svg>
+          </button>
+          <p class="about-card__eyebrow">About</p>
+          <h2 id="aboutTitle">A living digital habitat.</h2>
+          <p id="aboutDescription">NatureOS is something more than just an OS</p>
+          <button class="about-card__return" id="returnAboutButton" type="button">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M16 10H5m4-4-4 4 4 4"/>
+            </svg>
+            <span>Return</span>
+          </button>
+        </section>
+      </div>
+
+      <div class="leaf-field leaf-field--front" id="leafFieldFront" aria-hidden="true"></div>
+      <p class="welcome-screen__hint">Press Enter to begin</p>
+    </section>
+  </main>
+
+  <noscript>
+    <p class="no-script">NatureOS needs JavaScript for its live system details.</p>
+  </noscript>
+  <script src="script.js"></script>
+</body>
+</html>
